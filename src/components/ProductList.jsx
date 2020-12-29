@@ -8,7 +8,7 @@ function ProductList(props) {
             <div className="row">
                 { products.map((product)=> {
                     return(
-                        <div className="col-4">
+                        <div className="col-4" key={product.id}>
                             <img src={product.image} alt="" className="w-100"/>
                             <p className="mt-1">{product.name}</p>
                             <p>{product.price} {product.currency}</p>
