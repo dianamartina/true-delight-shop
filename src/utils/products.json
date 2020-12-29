@@ -1,0 +1,294 @@
+{
+    "cakes": {
+        "image": "https://i.imgur.com/u6Nc8vN.jpg",
+        "name": "Cakes",
+        "description": "Our freshly baked cakes are available in a variety of flavors and fillings, from vanilla with raspberry to chocolate mousse. ",
+        "items": [
+            {
+                "id": 1,
+                "name": "Chocolate cake",
+                "price": 135,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/intHlYu.jpg",
+                "description": "This chocolate cake is rich, chocolaty and decadent, hard not to fall in love."
+            },
+            {
+                "id": 2,
+                "name": "Macarons Cake with Raspberry",
+                "price": 175,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/0x2Ukv4.jpg",
+                "description": "This Raspberry Dream Cake has layers of tender, moist vanilla cake and fresh raspberry filling all covered in cream cheese frosting"
+            },
+            {
+                "id": 3,
+                "name": "Lime Cake",
+                "price": 95,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/LxAHgZ4.jpg",
+                "description": "Our super moist Lemon Lime Cake combines buttermilk, fresh citrus, and lemon-lime soda come together in one fantastic sheet cake!"
+            },
+            {
+                "id": 4,
+                "name": "Berry Cake",
+                "price": 145,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/aAVSQ5C.jpg",
+                "description": "A tender vanilla cake flavored with a touch of almond extract and filled with fresh berries."
+            },
+            {
+                "id": 5,
+                "name": "Colorful Cake",
+                "price": 255,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/bykBRC6.jpg",
+                "description": "For this delicios vanilla cake, you can coose your favorite colors and tastes. All colors are 100% natural, from fruits, vegetables and flowers."
+            },
+            {
+                "id": 6,
+                "name": "Marshmallows Cake",
+                "price": 175,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/Ovn9bNp.jpg",
+                "description": "Try our moreish marshmallow recipes. These fluffy sweets make the perfect treat."
+            },
+            {
+                "id": 7,
+                "name": "Blue buttercream flower cake",
+                "price": 270,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/VPaRe0v.jpg",
+                "description": "This blue cake is decorated with hand-piped colourful buttercream flowers on the top and circling the feet of the cake."
+            }
+        ]
+    },
+    "chocolate": {
+        "image": "https://i.imgur.com/sj3qN8O.jpg",
+        "name": "Chocolate Delicacies",
+        "description": "Our best chocolate dessert recipes include a rich chocolate layer cake and easy fudgy chocolate brownies. Plus more chocolate desserts ",
+        "items": [
+            {
+                "id": 21,
+                "name": "Chocolate truffles",
+                "price": 35,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/DPdonSf.jpg",
+                "description": "Chocolate truffles are a deeply indulgent chocolate treat made from chocolate and cream."
+            },
+            {
+                "id": 22,
+                "name": "Bars",
+                "price": 15,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/7FvOALZ.jpg",
+                "description": "Here you can find the greatest collection of our most loved chocolate bars!"
+            },
+            {
+                "id": 23,
+                "name": "Lava cake",
+                "price": 10,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/Sc5Jvws.jpg",
+                "description": "Molten chocolate cake is a popular dessert that combines the elements of a chocolate cake and a soufflé. Its name derives from the dessert's liquid chocolate center, and it is also known as chocolate moelleux (from French for \"soft\"), chocolate lava cake, or simply lava cake."
+            },
+            {
+                "id": 24,
+                "name": "Raspberry chocolate almond brownies",
+                "price": 18,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/tyMTFwO.jpg",
+                "description": "Brownie fans will fall in love with this delicious recipe."
+            }
+        ]
+    },
+    "icecream": {
+        "image": "https://i.imgur.com/8NZeg6N.jpg",
+        "name": "Ice Cream",
+        "description": "Everyones Favourite Ice Cream. A great icecream makes you feel refresh. ",
+        "items": [
+            
+            {
+                "id": 11,
+                "name": "Vanilla and candy",
+                "price": 35,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/Qm8qWEs.jpg",
+                "description": "A little treat with vanilla and colors"
+            },
+            {
+                "id": 12,
+                "name": "Candy icecream on a stick",
+                "price": 15,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/dnbAFox.jpg",
+                "description": "Vanilla ice cream with strawberry candy and nuts coating."
+            },
+            {
+                "id": 13,
+                "name": "Chocolate",
+                "price": 16,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/hbvtDhO.jpg",
+                "description": "Vanilla flavored ice cream and a chocolate flavored coating."
+            },
+            {
+                "id": 14,
+                "name": "Vanilla and chocolate",
+                "price": 23,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/Xqnk16g.jpg",
+                "description": "Try our homemade vanilla and chocolate ice cream with natural ingredients."
+            }, 
+            {
+                "id": 15,
+                "name": "Multicolor ice cream",
+                "price": 25,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/frdOAMv.jpg",
+                "description": "Our sugestion: raspberry, blueberry and  peach ice cream."
+            },
+            {
+                "id": 16,
+                "name": "Cornetto ice cream",
+                "price": 20,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/YmfTxrS.jpg",
+                "description": "You can choose the flavor you like from our varied offer of homemade ice cream."
+            }
+        ]
+        
+    },    
+    "pie": {
+        "image": "https://i.imgur.com/MdCH2GD.jpg",
+        "name": "Pie",
+        "description": "Our pie is a baked dish which is made of a pastry dough casing that contains a filling of various sweet or savoury ingredients. ",
+        "items": [
+            {
+                "id": 31,
+                "name": "Apple pie",
+                "price": 55,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/utobrw8.jpg",
+                "description": "Try the most famous and delicious pie. "
+            },
+            {
+                "id": 32,
+                "name": "Orange pie",
+                "price": 65,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/mTjI3Z4.jpg",
+                "description": "A Greek traditional favorite recipe, syrupy and buttery"
+            },
+            {
+                "id": 33,
+                "name": "Peanut butter pie with a Ritz cracker crust",
+                "price": 85,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/r9SJHXy.jpg",
+                "description": "A five-ingredient pie that's somewhere between peanut butter fudge and a gooey blondie. The best part? A big sprinkle of crunchy salt on top."
+            },
+            {
+                "id": 34,
+                "name": "Spinich pie",
+                "price": 75,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/zkMc1uH.jpg",
+                "description": "Spanakopita is a popular Greek savory pie made of perfectly flaky phyllo dough with a comforting filling of spinach and feta cheese nestled in."
+            }
+        ]
+    },
+    "pastries": {
+        "image": "https://i.imgur.com/tgedpw0.jpg",
+        "name": "Pastries",
+        "description": "Our homemade pastries are baked each morning, freshly proofed and filled so that you can experience a whole new taste. ",
+        "items": [
+            {
+                "id": 41,
+                "name": "Butter croissant",
+                "price": 10,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/78aGMW3.jpg",
+                "description": "The croissant is a buttery, flaky, viennoiserie pastry of Austrian origin. "
+            },
+            {
+                "id": 42,
+                "name": "Chocolate croissant",
+                "price": 7,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/E0u8Nxj.jpg",
+                "description": "Pain au chocolat is made of the same layered doughs as a croissant filled with hazelnut chocolate cream."
+            },
+            {
+                "id": 43,
+                "name": "Milk bread",
+                "price": 5,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/A73Rgvv.jpg",
+                "description": "Fresh out of the oven milk bread, homemade."
+            }
+        ]
+    },
+    "donuts": {
+        "image": "https://i.imgur.com/yqItexo.jpg",
+        "name": "Donuts",
+        "description": "Artisan donuts, with natural ingredients, made according to our own recipe, with passion and love for pastry.",
+        "items": [
+            {
+                "id": 51,
+                "name": "Chocolate Donuts ",
+                "price": 12,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/19CKLNH.jpg",
+                "description": "Moist and fluffy baked donuts covered in a thick, chocolate glaze, these are perfect for any chocoholic. "
+            },
+            {
+                "id": 52,
+                "name": "Lemon Poppyseed Donuts",
+                "price": 14,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/btwlTnS.jpg",
+                "description": "Baked Lemon Poppy Seed Donuts are delicious mini donuts that are speckled with poppy seeds and covered in a homemade lemon glaze."
+            },
+            {
+                "id": 53,
+                "name": "Pink donuts with colorful sprinkles",
+                "price": 10,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/kATGLO7.jpg",
+                "description": "Shop for the perfect pink donuts with colorful sprinkles gift from our wide selection of designs, or create your own personalized ones"
+            },
+            {
+                "id": 54,
+                "name": "Jam donuts",
+                "price": 7,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/4XbOuRO.jpg",
+                "description": "Our variety of jam homemade will delight your senses. "
+            },
+            {
+                "id": 55,
+                "name": "Donuts with fruits and flowers",
+                "price": 7,
+                "currency": "LEI",
+                "image": "https://i.imgur.com/TV865Ve.jpg",
+                "description": "Our fresh fruit iced donut recipe creates a colorful treat for all ages."
+            }
+        ]
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
