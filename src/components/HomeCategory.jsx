@@ -17,4 +17,4 @@ function HomeCategory(props) {
     )
 }
 
-export default HomeCategory
+export default HomeCategory;

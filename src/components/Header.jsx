@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import './Header.css';
+import { connect } from "react-redux";
 
 // Pentru Home, About si majoritatea paginilor ce vor fi create in urmatoarele cursuri, avem nevoie de un header
 // si un footer. Headerul va contine navbar-ul, deci link-urile utile catre alte pagini. Momentan, vom vrea ca
 // header-ul sa contina link-uri catre Home si Login
 function Header(props) {
-    const {user, signOut} = props;
+    const {user, signOut, numberOfProducts} = props;
     // console.log(props);
 
     return(
@@ -31,11 +32,22 @@ function Header(props) {
                         :  <Link to='/login' className="navbar-item">Login</Link>
                 }
                 
-                <span className="shopping-cart"><ShoppingCart /></span>
+                <Link to="/cart" className="d-flex">
+                    <span className="shopping-cart"><ShoppingCart /></span>
+                </Link>
+                <span> {numberOfProducts}</span>
             </div>
 
         </div>
     );
 }
 
-export default Header;
+function mapStateToProps (state) {
+    console.log("state=",state)
+    return {
+        numberOfProducts: state.products.length
+        
+    };
+  }
+
+export default connect(mapStateToProps)(Header);

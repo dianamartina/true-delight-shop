@@ -1,8 +1,11 @@
 import React from 'react';
+import { connect } from "react-redux";
+import { addToCart } from '../redux/actions/cart'
 
 function ProductList(props) {
 
-    const {products} = props;
+    const {products, addToCartInStore} = props;
+
     return (
         <div className="container">
             <div className="row">
@@ -12,7 +15,10 @@ function ProductList(props) {
                             <img src={product.image} alt="" className="w-100"/>
                             <p className="mt-1">{product.name}</p>
                             <p>{product.price} {product.currency}</p>
-                            <button className="btn btn-outline-dark btn-sm mb-5">Adauga in cos</button>
+                            <button 
+                                onClick={() => addToCartInStore(product)}
+                                className="btn btn-outline-dark btn-sm mb-5">Add to basket
+                            </button>
                         </div>
                     )
                 })}
@@ -21,4 +27,14 @@ function ProductList(props) {
     )
 }
 
-export default ProductList;
+function mapDispatchToProps(dispatch) {
+    
+    return {
+        addToCartInStore: (product) => {
+            const actionResult = addToCart(product);
+            dispatch(actionResult);
+        }
+    };
+  }
+
+export default connect(null, mapDispatchToProps)(ProductList);

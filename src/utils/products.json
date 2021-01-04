@@ -68,7 +68,7 @@
         "description": "Our best chocolate dessert recipes include a rich chocolate layer cake and easy fudgy chocolate brownies. Plus more chocolate desserts ",
         "items": [
             {
-                "id": 21,
+                "id": 11,
                 "name": "Chocolate truffles",
                 "price": 35,
                 "currency": "LEI",
@@ -76,7 +76,7 @@
                 "description": "Chocolate truffles are a deeply indulgent chocolate treat made from chocolate and cream."
             },
             {
-                "id": 22,
+                "id": 12,
                 "name": "Bars",
                 "price": 15,
                 "currency": "LEI",
@@ -84,7 +84,7 @@
                 "description": "Here you can find the greatest collection of our most loved chocolate bars!"
             },
             {
-                "id": 23,
+                "id": 13,
                 "name": "Lava cake",
                 "price": 10,
                 "currency": "LEI",
@@ -92,7 +92,7 @@
                 "description": "Molten chocolate cake is a popular dessert that combines the elements of a chocolate cake and a soufflé. Its name derives from the dessert's liquid chocolate center, and it is also known as chocolate moelleux (from French for \"soft\"), chocolate lava cake, or simply lava cake."
             },
             {
-                "id": 24,
+                "id": 14,
                 "name": "Raspberry chocolate almond brownies",
                 "price": 18,
                 "currency": "LEI",
@@ -108,7 +108,7 @@
         "items": [
             
             {
-                "id": 11,
+                "id": 21,
                 "name": "Vanilla and candy",
                 "price": 35,
                 "currency": "LEI",
@@ -116,7 +116,7 @@
                 "description": "A little treat with vanilla and colors"
             },
             {
-                "id": 12,
+                "id": 22,
                 "name": "Candy icecream on a stick",
                 "price": 15,
                 "currency": "LEI",
@@ -124,7 +124,7 @@
                 "description": "Vanilla ice cream with strawberry candy and nuts coating."
             },
             {
-                "id": 13,
+                "id": 23,
                 "name": "Chocolate",
                 "price": 16,
                 "currency": "LEI",
@@ -132,7 +132,7 @@
                 "description": "Vanilla flavored ice cream and a chocolate flavored coating."
             },
             {
-                "id": 14,
+                "id": 24,
                 "name": "Vanilla and chocolate",
                 "price": 23,
                 "currency": "LEI",
@@ -140,7 +140,7 @@
                 "description": "Try our homemade vanilla and chocolate ice cream with natural ingredients."
             }, 
             {
-                "id": 15,
+                "id": 25,
                 "name": "Multicolor ice cream",
                 "price": 25,
                 "currency": "LEI",
@@ -148,7 +148,7 @@
                 "description": "Our sugestion: raspberry, blueberry and  peach ice cream."
             },
             {
-                "id": 16,
+                "id": 26,
                 "name": "Cornetto ice cream",
                 "price": 20,
                 "currency": "LEI",

@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Practice 8
 
-Serviciu de logare cu Google si Facebook activate din Firebase
-Adaugare de meniu lateral cu posibilitate de filtrare pret pentru produse dintr-o categorie, folosind radio button.
+Cerinta: 
+
+Creerea functionalitatii removeFromCart - utilizatorul trebuie să poată șterge un produs din coș.
+
+Trebuie să creați o nouă acțiune și un nou reducer, care să modifice state-ul din store. Din pagina Cart, la click pe butonul de X, trebuie dispatch-uită acțiunea către store cu payload-ul necesar.

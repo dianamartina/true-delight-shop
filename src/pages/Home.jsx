@@ -1,6 +1,6 @@
 import React from 'react';
 // importam componenta Layout, in loc sa importam si header-ul si footer-ul.
-import products from '../utils/products.json';// am importat json-ul nostru , atentie se adauga extensia la sfarsit
+import products_json from '../utils/products.json';// am importat json-ul nostru , atentie se adauga extensia la sfarsit
 import Layout from '../components/Layout';
 import HomeCategory from '../components/HomeCategory';
 import './Home.css'
@@ -21,8 +21,8 @@ class Home extends React.Component {
         //in mod normal de la server fetch().then()....then()
 
         //aici didactic il luam din fisierul nostru
-        // console.log(products);
-        const productKeys = Object.keys(products);
+        // console.log(products_json);
+        const productKeys = Object.keys(products_json);
         // console.log(productKeys);
         this.setState({categories: productKeys })
     }
@@ -46,7 +46,7 @@ class Home extends React.Component {
                     </div> */}
                     <div className="home-title"> 
                         <p className="home-title-h2-p">find out</p>
-                        <h2 className="home-title-h2 h1">our products</h2>
+                        <h2 className="home-title-h2 h1">our products_json</h2>
                     </div>
                     <div className="container">{/* se limiteaza la o latime maxima indiferent de device */}
                         <div className="row">{/* creem un singur rand elementele se vor duce una sub alta  */}
@@ -54,9 +54,9 @@ class Home extends React.Component {
                                 return (                                                                           
                                         <HomeCategory 
                                             routeParam= {category}
-                                            image={products[category].image}
-                                            title={products[category].name}
-                                            description={products[category].description}
+                                            image={products_json[category].image}
+                                            title={products_json[category].name}
+                                            description={products_json[category].description}
                                             key={index}
                                         />                                    
                                 )

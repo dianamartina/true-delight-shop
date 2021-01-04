@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Register from './pages/Register';
 import Contact from './pages/Contact';
 import Category from './pages/Category';
+import Cart from './pages/Cart';
 import Page404 from './pages/Page404';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import Terms from './pages/Terms';
@@ -71,6 +72,7 @@ class App extends React.Component {
               <Home {...props} signOut={signOut} user={user} />
             )}
           />
+          <Route path='/cart' component={Cart}/>
           <Route path='/about' component={About}/>
           <Route path='/terms' component={Terms}/>
           <Route path='/privacy-policy' component={PrivacyPolicy}/>

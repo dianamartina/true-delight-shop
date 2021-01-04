@@ -17,8 +17,8 @@ class BaseListSideBar extends React.Component {
 
     render () {
         const {products} = this.props;
-        console.log(this.state.selectedOption);
-        console.log(products);
+        // console.log(this.state.selectedOption);
+        // console.log(products);
 
         return (
             <div className="container" >
@@ -26,7 +26,7 @@ class BaseListSideBar extends React.Component {
                 <div className="position-fixed side-bar-menu" >
                     Select price:
                     <p className="mt-3">
-                        <label htmlFor="first-interval" className="mr-1"> &#60; 20 LEI </label>
+                        <label htmlFor="first-interval" className="mr-1"> &le; 20 LEI </label>
                         <input 
                             type="radio" 
                             id="first-interval" 
@@ -44,7 +44,7 @@ class BaseListSideBar extends React.Component {
                             onChange={(event)=>this.handleValueChange(event)} />
                     </p>
                     <p>
-                        <label htmlFor="max-interval" className="mr-1">&#62; 50 LEI</label>
+                        <label htmlFor="max-interval" className="mr-1">&ge; 50 LEI</label>
                         <input 
                             type="radio" 
                             id="max-interval" 
