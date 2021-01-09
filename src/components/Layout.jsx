@@ -5,10 +5,11 @@ import Footer from './Footer';
 function Layout(props) {
     // console.log(props);
     // const {children} = props;
-    const {user, signOut} = props;
+    // const {user, signOut} = props;
     return (
         <div className="d-flex flex-column align-content-between">
-            <Header signOut={signOut} user={user}/>
+            {/* <Header signOut={signOut} user={user}/> */}
+            <Header/>
                 {props.children}
             <Footer/>
         </div>

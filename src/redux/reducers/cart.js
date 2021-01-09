@@ -33,7 +33,7 @@ export function cartReducer(state = initialState, action) {
             }
           }
 
-        case 'CLEAR_FROM_CART':
+        case 'REMOVE_FROM_CART':
             return {
                 ...state, products: state.products.filter(product=> product.id !== action.payload.id)
             }

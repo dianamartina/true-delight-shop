@@ -28,12 +28,16 @@ class Home extends React.Component {
     }
     render(){
         // console.log(this.props)
-        const {user, signOut} = this.props;
+        // const {user, signOut} = this.props;
 
         return(
             <div className="home">
                 {/* Tot ce este pus intre <Layout> si </Layout> va reprezenta props.children in cadrul componentei Layout.*/}
-                <Layout signOut={signOut} user={user}>
+                {/* <Layout signOut={signOut} user={user}> */}
+
+                <Layout>
+
+            
                     <div className="hero">
                             <h1 className="hero-h1">All for a special day</h1>
                             <p className="hero-p">SWEETS</p>
@@ -46,7 +50,7 @@ class Home extends React.Component {
                     </div> */}
                     <div className="home-title"> 
                         <p className="home-title-h2-p">find out</p>
-                        <h2 className="home-title-h2 h1">our products_json</h2>
+                        <h2 className="home-title-h2 h1">our products</h2>
                     </div>
                     <div className="container">{/* se limiteaza la o latime maxima indiferent de device */}
                         <div className="row">{/* creem un singur rand elementele se vor duce una sub alta  */}

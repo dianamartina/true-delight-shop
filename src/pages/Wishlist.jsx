@@ -3,9 +3,8 @@ import Layout from '../components/Layout';
 // importam HOC-ul connect
 import { connect } from 'react-redux';
 
-import { addToCart } from '../redux/actions/cart'
-import {removeFromCart} from '../redux/actions/cart'
-import { decrementProduct } from '../redux/actions/cart'
+import {removeFromWishlist} from '../redux/actions/wishlist';
+import { addToCart } from '../redux/actions/cart';
 
 
 import { Link } from 'react-router-dom';
@@ -17,28 +16,24 @@ import { ReactComponent as Close} from '../assets/icons/close.svg';
 // De ce Cart nu este o clasa? State-ul este tinut in store-ul global, deci nu va mai avea state! =>
 // poate fi o functional component.
 
-function Cart(props) {
-    
-    const {products, removeProduct, incrementProduct, decrementProduct } = props;
+function Wishlist(props) {
+
+    const {products, removeProduct, addToCartInStore } = props;
 
     return(
         // Nu uitam de Layout, pentru a avea Header si Footer
         <Layout>
+            
             <div className="cart-page container-fluid container-min-max-width
                 d-flex flex-column justify-content-center ">
+               
                 {
                     // Daca avem produse in cart, le afisam.
                     // PRODUSELE sunt venite din store si salvate in props prin functia mapStateToProps!!
-                    products.length
+
+                    products.length /* Afiseaza numarul de produse din lista*/
                     ? <div className="w-100 mt-5">
-                        < h1 className="mb-5 mt-3 ">Your Cart</h1>
-                        {/* Numele coloanelor ce vor fi afisate. */}
-                        <div className="d-flex justify-content-between text-center h4 text-bold">
-                            <p className="w-25">Product</p>
-                            <p className="w-25">Price</p>
-                            <p className="w-25">Quantity</p>
-                            <p className="w-25">Total produs</p>
-                        </div>
+                         < h1 className="mb-5 mt-3">Wishlist</h1>
                         {
                             // Afisam produsele din cart.
                             products.map(product => {
@@ -49,19 +44,21 @@ function Cart(props) {
                                         <p>{ product.name }</p>
                                     </div>
                                     <p className="w-25">{ product.price } { product.currency }</p>
-                                    <div className="w-25 d-flex justify-content-center">
-                                        <div className='arrow mr-1' onClick={() => decrementProduct(product)}>
-                                            &#10094;
-                                        </div>
-                                        <p >{ product.quantity }</p>
-                                        <div className='arrow ml-1'  onClick={() => incrementProduct(product)}>
-                                            &#10095;
-                                        </div>
+                                    <div>
+                                        <button 
+                                            onClick={() => addToCartInStore(product)}
+                                            className="btn btn-outline-dark btn-sm  mr-4">Add to basket
+                                        </button>
                                     </div>
+                                    
                                     <div className="w-25 d-flex justify-content-center">
-                                        <p className="mr-2">{ product.price * product.quantity } { product.currency }</p>
+                                        
                                         <span onClick={()=>removeProduct(product)} className="close" ><Close /></span>
+                                        
                                     </div>
+                                    
+                                    
+
                                    
                                 </div>
                             })
@@ -72,7 +69,7 @@ function Cart(props) {
                     </div>
                     // Daca nu avem produse in cart afisam un mesaj si un buton care duce la Home.
                     : <div className="d-flex flex-column justify-content-center  align-items-center vh-100">
-                        <p className="h3">No products!</p>
+                        <p className="h3">No products in wishlist!</p>
                         <Link to="/"><button className="btn btn-outline-dark mb-5 ">Go back to home page</button></Link>
                     </div>
                 }
@@ -87,28 +84,19 @@ function Cart(props) {
 // injectate in componenta curenta(Cart), care vor avea ca valori diverse campuri din state-ul din store.
 function mapStateToProps(state) {
     return {
-        products: state.cart.products
+        products: state.wishlist.products
     };
 }
 
 function mapDispatchToProps(dispatch) {
     return {
         removeProduct: (product) => {
-            dispatch(removeFromCart(product))
-        }, 
-        incrementProduct: (product) => {
-            const actionResult = addToCart(product);
-            dispatch(actionResult);
-        }, 
-        decrementProduct: (product) => {
-            const actionResult = decrementProduct(product);
-            dispatch(actionResult);
+            dispatch(removeFromWishlist(product))
+        },
+        addToCartInStore: (product) => {
+            dispatch(addToCart(product));
         }
     }
 }
 
-// Cart-ul trebuie sa fie conectat la store, deci vom folosi HOC-ul connect, care primeste automat
-// ca parametri mapStateToProps si mapDispatchToProps, pe care NOI trebuie sa le implementam.
-// ATENTIE! Trebuie ca cele doua metode sa fie pasate lui connect IN ORDINEA DE MAI SUS, dar pot fi denumire
-// diferit, cu conditia ca si numele metodei de mai sus(cand ii e scrisa implementarea) sa fie acelasi.
-export default connect(mapStateToProps, mapDispatchToProps)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Wishlist);

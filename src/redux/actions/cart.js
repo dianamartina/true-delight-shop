@@ -5,9 +5,9 @@ export function addToCart(payload) {
     }
 }
 
-export function clearItemFromCart(payload) {
+export function removeFromCart(payload) {
     return {
-        type: 'CLEAR_FROM_CART',
+        type: 'REMOVE_FROM_CART',
         payload
     }
 }

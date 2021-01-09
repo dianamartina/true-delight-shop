@@ -34,6 +34,7 @@ export default class Category extends Component {
                 </div> */}
                 {/* Daca nu vreau sa afisez filtru de pret pot afisa doar produsele */}
                 <div>
+                     < h1 className="mb-5 mt-3">{this.state.category.name}</h1>
                     {
                         this.state.category.items  
                             ? <ProductList products={this.state.category.items}/>
