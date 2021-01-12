@@ -9,8 +9,8 @@ import './Contact.css';
 function Contact() {
     return (
         <div>
-            <Layout>               
-                <div className="container mb-5">                    
+            <Layout>
+                <div className="container mb-5">
                     <div className="home-title"> 
                         <p className="home-title-h2-p">we are waiting for you</p>
                         <h2 className="home-title-h2 h1">Contact</h2>
@@ -45,8 +45,7 @@ function Contact() {
                                 </tr>
                                 <tr>
                                     <td>Sunday</td>
-                                    <td>10:00 - 19:00h
-</td>
+                                    <td>10:00 - 19:00h </td>
                                 </tr>
                             </table>
                             </div>
@@ -79,13 +78,8 @@ function Contact() {
                                 </div>
                             </div>
                         </div>
-
-                        
-                        
                     </div>
-                    
                 </div>
-                
             </Layout>
         </div>
     )

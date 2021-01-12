@@ -12,8 +12,8 @@ function HomeCategory(props) {
                     <h3 className="home-title-h3 h4 mt-4">{title}</h3>
                     <p className="home-text">{description}</p>
                 </Link>
-            </div>       
-        </div>        
+            </div>
+        </div>
     )
 }
 

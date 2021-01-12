@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import logo from '../assets/images/logo.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
 import { ReactComponent as WishlistHeartFill } from '../assets/icons/wishlist-heart-fill.svg';
-import { ReactComponent as WishlistHeartOutline } from '../assets/icons/wishlist-heart-outline.svg';
 import './Header.css';
 import '../utils/utility-classes.css';
 import { connect } from "react-redux";
@@ -20,9 +19,11 @@ function Header(props) {
     
     
     return(
-        // <div className="container-max-width"> // asa adaugam un o clasa dintr-un fisier de-al nostru de-al nostru de css
+        // <div className="container-max-width"> // asa adaugam o clasa dintr-un fisier de-al nostru de css
         <div className="header d-flex justify-content-between align-items-center mt-3">
-            <Link to="/"><img src={logo} alt="Logo" className="logo" /></Link>
+            <Link to="/">
+                <img src={logo} alt="Logo" className="logo" />
+            </Link>
             
             <div className="mr-5 d-flex">
                 <Link to="/" className="navbar-item">Home</Link>
@@ -68,7 +69,6 @@ function mapDispatchToProps(dispatch) {
     return {
         signOutInjected: () => {
             dispatch(signOutAction())
-           
         }
     };
   }

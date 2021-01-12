@@ -44,10 +44,7 @@ class Home extends React.Component {
                             <div className="small-line"></div>
                             <p className="hero-p-descrip">It’s always good time for sweets!<br/>Find your favorite now.</p>
                     </div>
-                    {/* <div className="home-text-space">
-                        <p>If there's no chocolate in Heaven,</p>
-                        <p> I'm not going.</p>
-                    </div> */}
+
                     <div className="home-title"> 
                         <p className="home-title-h2-p">find out</p>
                         <h2 className="home-title-h2 h1">our products</h2>
@@ -55,14 +52,14 @@ class Home extends React.Component {
                     <div className="container">{/* se limiteaza la o latime maxima indiferent de device */}
                         <div className="row">{/* creem un singur rand elementele se vor duce una sub alta  */}
                             {this.state.categories.map((category, index)=>{
-                                return (                                                                           
+                                return (
                                         <HomeCategory 
                                             routeParam= {category}
                                             image={products_json[category].image}
                                             title={products_json[category].name}
                                             description={products_json[category].description}
                                             key={index}
-                                        />                                    
+                                        />
                                 )
                             })}
                         </div>

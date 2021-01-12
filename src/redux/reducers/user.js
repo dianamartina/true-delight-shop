@@ -23,7 +23,7 @@ export function userReducer(state = initialState, action) {
             return{
                 ...state,
                 error: action.payload
-            }    
+            }
 
         default:
             return state;
