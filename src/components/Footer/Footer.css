@@ -1,0 +1,67 @@
+.footer {
+  background-color: #280104;
+  color: rgb(193, 157, 86);
+  padding-top: 1.25rem;
+}
+
+.footer h5 {
+  font-family: "Great Vibes";
+  font-size: 1.4rem;
+}
+
+.footer-bottom {
+  border-top: 1px solid #603a22;
+  padding-top: 10px;
+  color: #603a22;
+}
+
+.footer-social-media {
+  justify-content: flex-end;
+}
+
+.social-media-icon {
+  margin: 0 15px;
+}
+
+.social-media-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.social-media-icon,
+.social-media-icon:visited {
+  fill: #c19d56;
+  transition: all 0.5s;
+}
+
+.social-media-icon:hover,
+.social-media-icon:active {
+  fill: #e2dbcd;
+}
+
+.footer-navbar-item,
+.footer-navbar-item:visited {
+  color: #c19d56;
+  margin-right: 20px;
+}
+
+.footer-navbar-item:hover,
+.footer-navbar-item:active {
+  text-decoration: none;
+  color: #e2dbcd;
+}
+
+@media (max-width: 576px) {
+  .footer-nav {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .footer-navbar-item {
+    margin: 0;
+  }
+
+  .footer-social-media {
+    justify-content: center;
+  }
+}

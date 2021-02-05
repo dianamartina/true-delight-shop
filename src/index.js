@@ -7,11 +7,13 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from "react-redux";
 import store from "./redux/store";
+import ScrollToTop from "./scrollToTop";
 
 ReactDOM.render(
 
   <Provider store={store}>
     <BrowserRouter>
+      <ScrollToTop /> {/* for React 16.8+ it heps to scroll to top the linked page */}
       <App />
     </BrowserRouter>
   </Provider>,  

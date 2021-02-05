@@ -1,0 +1,94 @@
+.header {
+  /* background-color: #280104; */
+  background-color: transparent;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+}
+
+.logo-name {
+  font-family: "Great Vibes";
+  font-size: 28px;
+  color: #e2dbcd;
+  text-decoration: none;
+  padding-top: 12px;
+}
+
+.header .logo {
+  width: 200px;
+  position: relative;
+}
+
+.navbar-item,
+.navbar-item:visited {
+  color: #786745;
+  margin-left: 20px;
+}
+.navbar-item:hover,
+.navbar-item:active,
+.navbar-item:focus {
+  text-decoration: none;
+  color: #c19d56;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+#collasible-nav-dropdown,
+#collasible-nav-dropdown:visited {
+  color: #786745;
+  margin-left: 20px;
+  padding: 0;
+  outline: none;
+}
+
+#collasible-nav-dropdown:hover,
+#collasible-nav-dropdown:active,
+#collasible-nav-dropdown:focus {
+  text-decoration: none;
+  color: #c19d56;
+  box-shadow: none;
+  padding: 0;
+}
+
+.number-cart-wish {
+  color: #e2dbcd;
+}
+
+.navbar-name {
+  position: absolute;
+  left: 15px;
+  color: #c19d56;
+}
+
+.navbar-login-logout {
+  padding: 0;
+  margin-right: 5px;
+  width: 65px;
+}
+
+.header .btn {
+  vertical-align: inherit;
+}
+
+.show,
+.collapsing {
+  background-color: #280104;
+}
+
+@media (max-width: 768px) {
+  .show,
+  .collapsing {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .navbar-name {
+    max-width: 140px;
+  }
+}

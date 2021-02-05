@@ -2,16 +2,16 @@ import { createStore, applyMiddleware, combineReducers } from 'redux';
 import logger from 'redux-logger';
 import thunk from 'redux-thunk';
 
-import { cartReducer } from './reducers/cart';
-import { userReducer } from './reducers/user';
-import { wishlistReducer } from './reducers/wishlist';
+import { cartReducer } from './Cart/CartReducer';
+import { userReducer } from './User/UserReducer';
+import { wishlistReducer } from './Wishlist/WishlistReducer';
 
 function saveToLocalStorage(state) {
     try {
         const serializedState = JSON.stringify(state)
         localStorage.setItem('state', serializedState)
     } catch(e) {
-        // console.log(e);
+        console.log(e);
     }
 }
 
@@ -21,7 +21,7 @@ function loadFromLocalStorage() {
         if (serializedState === null) return undefined
         return JSON.parse(serializedState)
     } catch(e) {
-        // console.log(e)
+        console.log(e)
         return undefined
     }
 }
@@ -41,4 +41,3 @@ store.subscribe(() => saveToLocalStorage(store.getState()));
 
 export default store;
 
-// Middleware ne ajuta sa vedem in consola din browser etapele de modificare ale state-ul

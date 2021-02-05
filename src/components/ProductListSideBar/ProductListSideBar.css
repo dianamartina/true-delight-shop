@@ -1,0 +1,40 @@
+.side-bar-menu {
+  /* background-image: linear-gradient(rgb(193, 157, 86), rgb(193, 157, 86)); */
+  background-color: #f8f7f4;
+  outline: 1px solid #c19d56;
+  outline-offset: 2px;
+  border: 1px solid #c19d56;
+  z-index: 10;
+  padding: 10px;
+  position: fixed;
+  top: 102px;
+  left: 0;
+}
+
+.side-bar-menu input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 2px;
+  left: 4px;
+  height: 12px;
+  width: 12px;
+  background: #f8f6f4;
+  border: 1px solid #c19d56;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  z-index: 1000;
+}
+.side-bar-menu input:hover,
+.side-bar-menu input:checked {
+  background: #c19d56;
+}
+
+.side-bar-menu label {
+  cursor: pointer;
+}

@@ -1,5 +1,37 @@
 body {
   color: #280104;
+  background-color: #280104;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  /* background-color: #f8f7f4; */
+}
+
+.vh-75 {
+  min-height: 75vh;
+}
+
+.vh-50 {
+  min-height: 50vh;
+}
+
+.bkg-light-gold {
+  background-color: #f8f7f4;
+}
+
+.bkg-brown {
+  background-color: #280104;
+}
+
+.container-min-max-width {
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.main {
+  background-color: #f8f7f4;
+  margin-top: 100px;
+  text-align: center;
+  padding-bottom: 3rem;
 }
 
 .icon,
@@ -7,13 +39,124 @@ body {
   fill: #c19d56;
 }
 
-/* .icon-heart-hover {
-  background: url(../../src/assets/icons/wishlist-heart-outline.svg);
-  fill: #c19d56;
-} */
+.icon:hover {
+  cursor: pointer;
+}
 
 .gold-border {
   border: 1px solid #c19d56;
-  padding: 25px;
-  margin-bottom: 30px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.signature {
+  width: 150px;
+}
+
+.no-link,
+.no-link:hover,
+.no-link:visited,
+.no-link:active {
+  color: #280104;
+  text-decoration: none;
+}
+
+.title {
+  margin: 3rem;
+  padding-top: 2rem;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.title-h2,
+.title-h3 {
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: 600;
+}
+
+.title-h2-p {
+  font-family: "Great Vibes";
+  font-size: 2.6rem;
+  font-weight: 400;
+  color: rgb(193, 157, 86);
+}
+
+.text-18 {
+  font-size: 1.13rem;
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-20 {
+  font-size: 1.25rem;
+  font-family: "Cormorant", serif;
+  font-style: italic;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-14 {
+  font-size: 0.88rem;
+}
+
+.btn-gold,
+.btn-gold:visited,
+.btn-gold:active,
+.btn-gold:focus {
+  color: #fff;
+  border-radius: 0;
+  background-color: #c19d56;
+  outline: 1px solid #c19d56;
+  outline-offset: 2px;
+  box-shadow: none;
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  line-height: 2em;
+  font-style: normal;
+  letter-spacing: 0.19em;
+  font-weight: 500;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+.btn-gold:hover {
+  background-color: #280104;
+  color: #fff;
+}
+
+.delete,
+.arrow {
+  cursor: pointer;
+}
+
+.arrow {
+  font-size: 1.4rem;
+  padding: 0 5px;
+}
+
+.delete {
+  fill: #c19d56;
+  transform: all 0.5s;
+}
+
+.delete:hover {
+  fill: #280104;
+}
+
+.delete svg {
+  vertical-align: 0;
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 87%;
+  }
+
+  .gold-border {
+    padding: 0.8rem;
+    margin-bottom: 1.7rem;
+  }
 }

@@ -1,0 +1,13 @@
+.product-image {
+  max-width: 400px;
+}
+
+.product-description {
+  align-items: flex-start;
+}
+
+@media (max-width: 576px) {
+  .product-description {
+    align-items: center;
+  }
+}

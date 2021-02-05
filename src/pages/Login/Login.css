@@ -1,0 +1,21 @@
+.logo-name-gold {
+  font-family: "Great Vibes";
+  font-size: 28px;
+  color: #c19d56;
+  text-decoration: none;
+}
+
+.login-icon-G svg,
+.login-icon-F svg {
+  fill: #fff;
+}
+
+.login-icon-G svg {
+  width: 20px;
+  height: 20px;
+}
+
+.login-icon-F svg {
+  width: 24px;
+  height: 24px;
+}

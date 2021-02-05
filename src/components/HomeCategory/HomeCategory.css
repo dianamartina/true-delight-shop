@@ -1,0 +1,28 @@
+.category-hover {
+  color: #280104;
+  transition: all 0.5s;
+}
+
+.category-hover:hover {
+  color: #c19d56;
+  text-decoration: none;
+}
+
+.category-image {
+  transition: all 0.5s;
+}
+
+.category-image:hover,
+.category-image:active,
+.category-image:focus {
+  opacity: 0.6;
+  transform: scale(1.01);
+}
+
+.category-image-bkg,
+.category-image-bkg:hover,
+.category-image-bkg:active,
+.category-image-bkg:focus {
+  background-image: linear-gradient(rgb(99, 73, 21), rgba(193, 157, 86, 1));
+  overflow: hidden;
+}

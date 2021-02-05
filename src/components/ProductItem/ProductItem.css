@@ -1,0 +1,31 @@
+.product-item-hover {
+  color: #280104;
+  transition: all 0.5s;
+}
+
+.product-item-hover:hover {
+  color: #c19d56;
+  text-decoration: none;
+}
+
+.product-item-name {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.product-item-image {
+  transition: all 0.5s;
+}
+
+.product-item-image:hover {
+  opacity: 0.6;
+}
+
+.product-item-image-bkg:hover {
+  background-image: linear-gradient(rgb(99, 73, 21), rgba(193, 157, 86, 1));
+}
+
+.product-item-price {
+  font-style: italic;
+  font-size: 0.85rem;
+}

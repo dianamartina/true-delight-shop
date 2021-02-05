@@ -2,30 +2,31 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from "react-router-dom";
 
-import Home from './pages/Home';
-import About from './pages/About';
-import Login from './pages/Login';
-import Register from './pages/Register';
-import Contact from './pages/Contact';
-import Wishlist from './pages/Wishlist';
-import Category from './pages/Category';
-import Cart from './pages/Cart';
-import Page404 from './pages/Page404';
-import PrivacyPolicy from './pages/PrivacyPolicy';
-import Terms from './pages/Terms';
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Login from './pages/Login/Login';
+import Register from './pages/Register/Register';
+import Contact from './pages/Contact/Contact';
+import Wishlist from './pages/Wishlist/Wishlist';
+import Category from './pages/Category/Category';
+import Cart from './pages/Cart/Cart';
+import Product from './pages/Product/Product';
+import PrivacyPolicy from './pages/PrivacyPolicy/PrivacyPolicy';
+import Terms from './pages/Terms/Terms';
+import Page404 from './pages/Page404/Page404';
+import './utils/utility-classes.css';
 // FIREBASE IMPORTS
-// import withFirebaseAuth from 'react-with-firebase-auth'//il stergem
-// import * as firebase from 'firebase/app';//il stergem
-// import 'firebase/auth';// l-am mutat in alt fisier
-// import firebaseConfig from './config/firebase';// e in alt fisier
-// const firebaseApp = firebase.initializeApp(firebaseConfig);// e in alt fisier
+// import withFirebaseAuth from 'react-with-firebase-auth'//delete
+// import * as firebase from 'firebase/app';//delete
+// import 'firebase/auth';// moved to apis/firebase.js file
+// import firebaseConfig from './config/firebase';// moved to apis/firebase.js file
+// const firebaseApp = firebase.initializeApp(firebaseConfig);// moved to apis/firebase.js file
 
 // const firebaseAppAuth = firebaseApp.auth();//
 // const providers = {
 //   googleProvider: new firebase.auth.GoogleAuthProvider(),
 //   facebookProvider: new firebase.auth.FacebookAuthProvider()
-// }; // e in alt fisier
-
+// }; // moved to apis/firebase.js file
 
 class App extends React.Component {
   constructor() {
@@ -41,7 +42,6 @@ class App extends React.Component {
     //   signInWithGoogle,
     //   signInWithFacebook
     // } = this.props;
-    
     // console.log(this.props);
     // console.log(signInWithFacebook);
     
@@ -58,17 +58,12 @@ class App extends React.Component {
 
       } */}
         <Switch>
-          
           {/* <Route
             path='/login'
             render={(props) => (
               <Login {...props} signInWithGoogle={signInWithGoogle} signInWithFacebook={signInWithFacebook}/>
             )}
           /> */}
-
-          <Route path='/login' component={Login}/>
-
-          <Route path='/register' component={Register}/>
           <Route exact path='/' component={Home}/>
           {/* <Route exact
             path='/'
@@ -76,6 +71,8 @@ class App extends React.Component {
               <Home {...props} signOut={signOut} user={user} />
             )}
           /> */}
+          <Route path='/login' component={Login}/>
+          <Route path='/register' component={Register}/>
           <Route path='/cart' component={Cart}/>
           <Route path='/wishlist' component={Wishlist}/>
           <Route path='/about' component={About}/>
@@ -83,6 +80,8 @@ class App extends React.Component {
           <Route path='/privacy-policy' component={PrivacyPolicy}/>
           <Route path='/contact' component={Contact}/>
           <Route path='/category/:categoryName' component={Category}/>
+          <Route path='/product/:productId' component={Product}/>
+
           <Route path='*' component={Page404}/>
         </Switch>
       </div>
@@ -95,4 +94,4 @@ export default (App);
 // export default withFirebaseAuth({
 //   providers,
 //   firebaseAppAuth,
-// })(App);               // el stergem
+// })(App);               // refactoring switching login to Redux

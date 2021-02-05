@@ -7,7 +7,7 @@ import firebaseConfig from '../configs/firebase';
 firebase.initializeApp(firebaseConfig);
 
 const providerGoogle = new firebase.auth.GoogleAuthProvider();
-const providerFacebook = new firebase.auth.GoogleAuthProvider();
+const providerFacebook = new firebase.auth.FacebookAuthProvider();
 
 export function signInWithGoogle() {
     return firebase.auth().signInWithPopup(providerGoogle)// la apelare, face logarea cu google si returneaza un promise cu rezultatul logarii

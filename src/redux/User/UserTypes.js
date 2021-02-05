@@ -1,0 +1,5 @@
+export const UserActionTypes = {
+    UPDATE_USER_DATA: 'UPDATE_USER_DATA',
+    START_LOADING: 'START_LOADING',
+    UPDATE_ERROR: 'UPDATE_ERROR'
+  };
