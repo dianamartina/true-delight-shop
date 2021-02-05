@@ -1,8 +1,10 @@
 # Online shop True Delight
 
+ https://react-true-delight-shop.herokuapp.com/
+
 True Delight it is an online shop for sweets, cakes and chocolate.
 
-The app is built using ReactJs framework, React Router,Redux, Redux Thunk, Firebase and Bootstrap.
+The app is built using ReactJs library, React Router,Redux, Redux Thunk, Firebase and Bootstrap.
 The products come from a local Json file.
 
 ## Functionalities
