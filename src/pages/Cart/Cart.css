@@ -1,3 +1,7 @@
+.cart-container {
+  min-height: calc(100vh - 23rem);
+}
+
 .cart-image {
   max-height: 100px;
   margin-right: 0.5rem;

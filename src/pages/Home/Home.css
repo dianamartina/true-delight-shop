@@ -7,7 +7,7 @@
   margin-top: -100px;
 }
 
-.hero-h1 {
+.hero-sec {
   font-size: 2.5rem;
   line-height: 70px;
   font-weight: 400;
@@ -15,7 +15,7 @@
   font-family: "Great Vibes";
 }
 
-.hero-p {
+.hero-h1 {
   font-size: 4rem;
   font-weight: 600;
   color: #ffffff;
@@ -32,7 +32,7 @@
   font-family: "Cormorant", serif;
   font-size: 1.125rem;
   font-style: italic;
-  color: #e2dbcd;
+  color: #f1ece1;
   margin-top: 1.25rem;
   width: 300px;
 }

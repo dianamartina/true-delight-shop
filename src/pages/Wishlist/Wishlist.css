@@ -1,3 +1,7 @@
+.wishlist-container {
+  min-height: calc(100vh - 23rem);
+}
+
 .wishlist-name {
   font-weight: 600;
   font-size: 1rem;

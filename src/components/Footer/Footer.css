@@ -2,6 +2,7 @@
   background-color: #280104;
   color: rgb(193, 157, 86);
   padding-top: 1.25rem;
+  max-height: 15rem;
 }
 
 .footer h5 {
@@ -12,7 +13,16 @@
 .footer-bottom {
   border-top: 1px solid #603a22;
   padding-top: 10px;
-  color: #603a22;
+  color: #97793c;
+}
+
+.logo-DM {
+  height: 1.4rem;
+  width: auto;
+  display: inline-block;
+  vertical-align: text-bottom;
+  padding-left: 0.4rem;
+  opacity: 0.8;
 }
 
 .footer-social-media {
