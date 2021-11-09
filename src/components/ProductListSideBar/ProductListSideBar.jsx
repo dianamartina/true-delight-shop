@@ -24,11 +24,7 @@ class ProductListSideBar extends React.Component {
   };
 
   functionSorryMessage = () => {
-    return (
-      <div className="d-flex justify-content-center  align-items-center ">
-        <p className="h3 mb-5">Sorry, no products!</p>
-      </div>
-    );
+    return <p className="h3 mx-auto">Sorry, no products!</p>;
   };
 
   render() {
